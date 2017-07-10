@@ -29,13 +29,5 @@ module.exports = () => {
     });
   });
 
-  app.use(function (req, res, next) {
-    res.status(404).send({ error: 'Route not found' });
-  });
-
-  app.use(function (req, res, next) {
-    res.status(500).send({ error: 'Internal server error' });
-  });
-
   return app;
 }
