@@ -14,10 +14,16 @@ module.exports = () => {
   app.use(express.static(path.resolve('./public')));
   // app.set('view engine', 'pug');
 
-  glob('./api/v1/**/*.js', function (err, files) {
-    files.forEach(routePath => {
+  glob(`.${V1}/**/*.js`, function (err, files) {
+    files.forEach((routePath) => {
       const route = require(path.resolve(routePath))(express);
-      app.use('/api/v1/', route);
+
+      // Entity is called as filename
+      var entity = routePath
+        .substring(routePath.lastIndexOf('/') + 1, routePath.length)
+        .slice(0, -3);
+
+      app.use(`${V1}/${entity}`, route);
     });
   });
 
