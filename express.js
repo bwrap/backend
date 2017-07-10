@@ -6,6 +6,11 @@ var express = require('express');
 var glob = require('glob');
 var morgan = require('morgan');
 
+const {
+  logErrors,
+  errorHandler,
+} = require('./middlewares');
+
 const V1 = '/api/v1';
 
 module.exports = () => {
@@ -28,6 +33,9 @@ module.exports = () => {
       app.use(`${V1}/`, router);
     });
   });
+
+  app.use(logErrors);
+  app.use(errorHandler);
 
   return app;
 }
