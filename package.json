@@ -27,6 +27,7 @@
     "jade": "1.11.0",
     "mocha": "3.4.2",
     "morgan": "1.8.2",
+    "pluralize": "5.0.0",
     "supertest": "3.0.0"
   }
 }

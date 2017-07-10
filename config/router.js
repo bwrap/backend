@@ -2,9 +2,10 @@
 /**
  * Router
  */
+var Pluralize = require('pluralize');
 
  var defaultRoutes = {
-   index:   { method: 'post', path: '' },
+   index:   { method: 'post', path: '', pluralize: true },
    create:  { method: 'post', path: '' },
    get:     { method: 'get', path: ':_id'  },
    update:  { method: 'put', path: ':_id'  },
@@ -12,8 +13,9 @@
    patch:   { method: 'patch' },
  };
 
- function getName (entity) {
-   return entity.name.toLowerCase();
+ function getName (entity, isPluralize) {
+   var name = entity.name.toLowerCase();
+   return !isPluralize ? name : Pluralize(name);
  }
 
 module.exports = function routes (express, Entity) {
@@ -27,7 +29,7 @@ module.exports = function routes (express, Entity) {
       var rt = defaultRoutes[index];
       if (rt) {
         router[rt.method](
-          `/${getName(Entity)}/${rt.path}`,
+          `/${getName(Entity, rt.pluralize)}/${rt.path}`,
           entity[index]
         );
       } else {
