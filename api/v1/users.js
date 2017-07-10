@@ -4,7 +4,7 @@
  */
 
 class User {
-  index (req, res) {
+  async index (req, res) {
     try {
       res.send({ count: 0,  data: [] });
     } catch (error) {
@@ -12,7 +12,7 @@ class User {
     }
   }
 
-  create (req, res) {
+  async create (req, res) {
     try {
       res.send({ count: 0,  data: {} });
     } catch (error) {
@@ -20,7 +20,7 @@ class User {
     }
   }
 
-  get (req, res) {
+  async get (req, res) {
     try {
       res.send({ count: 0,  data: {} });
     } catch (error) {
@@ -28,7 +28,7 @@ class User {
     }
   }
 
-  update (req, res) {
+  async update (req, res) {
     try {
       res.send({ count: 0,  data: {} });
     } catch (error) {
@@ -36,7 +36,7 @@ class User {
     }
   }
 
-  delete (req, res) {
+  async delete (req, res) {
     try {
       res.send({ count: 0,  data: {} });
     } catch (error) {
@@ -44,7 +44,7 @@ class User {
     }
   }
 
-  addCompany (req, res) {
+  async addCompany (req, res) {
     try {
       res.send({ count: 0,  data: {} });
     } catch (error) {
