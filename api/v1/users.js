@@ -3,28 +3,54 @@
  * Users
  */
 
-module.exports = function route (express) {
-  const router = express.Router();
+class User {
+  index (req, res) {
+    try {
+      res.send({ count: 0,  data: [] });
+    } catch (error) {
+      res.send({ message: error });
+    }
+  }
 
-  // List
-  router.post('/', function (req, res) {
-    res.send({ data: [] });
-  });
+  create (req, res) {
+    try {
+      res.send({ count: 0,  data: {} });
+    } catch (error) {
+      res.send({ message: error });
+    }
+  }
 
-  // GET - get one result
-  router.get('/:_id', function (req, res) {
-    res.send({ data: {} });
-  });
+  get (req, res) {
+    try {
+      res.send({ count: 0,  data: {} });
+    } catch (error) {
+      res.send({ message: error });
+    }
+  }
 
-  // PUT - edit one result
-  router.put('/:_id', function (req, res) {
-    res.send({ data: {} });
-  });
+  update (req, res) {
+    try {
+      res.send({ count: 0,  data: {} });
+    } catch (error) {
+      res.send({ message: error });
+    }
+  }
 
-  // Delete - delete one result
-  router.delete('/:_id',function (req, res) {
-    res.send({ data: {} });
-  });
+  delete (req, res) {
+    try {
+      res.send({ count: 0,  data: {} });
+    } catch (error) {
+      res.send({ message: error });
+    }
+  }
 
-  return router;
-};
+  addCompany (req, res) {
+    try {
+      res.send({ count: 0,  data: {} });
+    } catch (error) {
+      res.send({ message: error });
+    }
+  }
+}
+
+module.exports = User;
