@@ -43,14 +43,6 @@ class User {
       res.send({ message: error });
     }
   }
-
-  async addCompany (req, res) {
-    try {
-      res.send({ count: 0,  data: {} });
-    } catch (error) {
-      res.send({ message: error });
-    }
-  }
 }
 
 module.exports = User;
