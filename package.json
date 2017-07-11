@@ -22,12 +22,16 @@
   },
   "homepage": "https://github.com/bwrap/backend#readme",
   "dependencies": {
+    "bcrypt": "1.0.2",
     "express": "4.15.3",
-    "glob": "7.1.2",
-    "jade": "1.11.0",
+    "glob": "4.0.5",
+    "micro-mongo": "1.0.0",
     "mocha": "3.4.2",
+    "moment": "2.18.1",
+    "mongoose": "4.9.3",
     "morgan": "1.8.2",
     "pluralize": "5.0.0",
-    "supertest": "3.0.0"
+    "supertest": "3.0.0",
+    "validator": "8.0.0"
   }
 }

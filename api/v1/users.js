@@ -3,10 +3,13 @@
  * Users
  */
 
+var user = new (require('../../dl/user'))();
+
 class User {
   async index (req, res) {
     try {
-      res.send({ count: 0,  data: [] });
+      var result = await user.findAll();
+      res.send({ count: result.count, data: result.data });
     } catch (error) {
       res.send({ message: error });
     }
