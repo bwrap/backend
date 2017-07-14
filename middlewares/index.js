@@ -1,6 +1,6 @@
 
 exports.handler = function handler(req, res, next) {
-  console.log('Handler!', req);
+  console.log('Handler!', req.body);
   next();
 }
 
