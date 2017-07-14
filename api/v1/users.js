@@ -6,12 +6,14 @@
 var user = new (require('../../dl/user'))();
 
 class User {
-  async index (req, res) {
+  async index ({ search, pagination }, response) {
     try {
-      var result = await user.findAll({}, {}, {  });
-      res.send({ count: result.count, data: result.data });
+      var query = { email: { $regex: search, $options: '-i' } };
+
+      var result = await user.findAll(query, { pagination });
+      response.send({ count: result.count, data: result.data });
     } catch (error) {
-      res.send({ message: error });
+      response.send({ message: error });
     }
   }
 

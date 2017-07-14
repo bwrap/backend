@@ -1,6 +1,14 @@
 
+function pagination (params) {
+  var limit   = params.limit  || 10;
+  var offset  = params.offset || 0;
+
+  return { limit, offset };
+}
+
 exports.handler = function handler(req, res, next) {
-  console.log('Handler!', req.body);
+  req.pagination = pagination(req.body);
+  req.search = req.body.search || '';
   next();
 }
 
