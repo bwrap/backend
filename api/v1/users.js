@@ -6,8 +6,15 @@
 var user = new (require('../../dl/user'))();
 
 class User {
-  async index ({ search, pagination }, response) {
+  /**
+   * List of users with pagination and search param
+   * @param  {String} params.search       Search by email
+   * @param  {Object} params.pagination   pagination by limit and offset
+   * @return {Promise}                    List of users
+   */
+  async index (params, response) {
     try {
+      var { search, pagination } = params;
       var query = { email: { $regex: search, $options: '-i' } };
 
       var result = await user.findAll(query, { pagination });
