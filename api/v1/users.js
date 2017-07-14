@@ -8,7 +8,7 @@ var user = new (require('../../dl/user'))();
 class User {
   async index (req, res) {
     try {
-      var result = await user.findAll();
+      var result = await user.findAll({}, {}, {  });
       res.send({ count: result.count, data: result.data });
     } catch (error) {
       res.send({ message: error });
@@ -25,7 +25,8 @@ class User {
 
   async get (req, res) {
     try {
-      res.send({ count: 0,  data: {} });
+      var result = await user.findOne({ _id: req.params._id });
+      res.send({ data: result });
     } catch (error) {
       res.send({ message: error });
     }

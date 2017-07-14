@@ -1,4 +1,9 @@
 
+exports.handler = function handler(req, res, next) {
+  console.log('Handler!', req);
+  next();
+}
+
 exports.logErrors = function logErrors(err, req, res, next) {
   console.error(err.stack);
   next(err);

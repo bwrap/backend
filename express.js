@@ -7,6 +7,7 @@ var glob = require('glob');
 var morgan = require('morgan');
 
 const {
+  handler,
   logErrors,
   errorHandler,
 } = require('./middlewares');
@@ -34,6 +35,7 @@ module.exports = () => {
     });
   });
 
+  app.use(handler);
   app.use(logErrors);
   app.use(errorHandler);
 
