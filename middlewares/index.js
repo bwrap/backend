@@ -9,6 +9,7 @@ function pagination (params) {
 exports.handler = function handler(req, res, next) {
   req.pagination = pagination(req.body);
   req.search = req.body.search || '';
+
   next();
 }
 

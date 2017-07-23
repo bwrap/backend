@@ -2,10 +2,10 @@
 /**
  * Users
  */
-
-var user = new (require('../../dl/user'))();
+var UserModel = require('../models/users');
 
 class User {
+
   /**
    * List of users with pagination and search param
    * @param  {String} params.search       Search by email
@@ -17,10 +17,17 @@ class User {
       var { search, pagination } = params;
       var query = { email: { $regex: search, $options: '-i' } };
 
-      var result = await user.findAll(query, { pagination });
-      response.send({ count: result.count, data: result.data });
+      var count = await UserModel.count();
+      var user = await UserModel
+        .find({}, {})
+        .skip(pagination.offset)
+        .limit(pagination.limit)
+        .sort({ createdAt: -1 });
+
+      response.send({ sucess: true, count: count, data: user });
     } catch (error) {
-      response.send({ message: error });
+      console.log(error);
+      response.send({ success: false, message: error });
     }
   }
 

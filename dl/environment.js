@@ -1,16 +1,8 @@
-
 'use strict';
 
-const MongoDB = require('micro-mongo');
+const mongoose = require('mongoose');
+const MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost:27017/test';
 
-/**
- * This class is a bridge to use to use different
- * databases only extending
- * Environmet Class
- * @constructor
- */
-class Environment extends MongoDB {
-  // More code here
-}
+mongoose.connect(MONGO_URL);
 
-module.exports = Environment;
+module.exports = mongoose;

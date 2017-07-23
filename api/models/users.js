@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('../../dl/environment');
 const isEmail = require('validator/lib/isEmail');
 const Schema = mongoose.Schema;
 const bcrypt = require('bcrypt');
