@@ -35,14 +35,20 @@ module.exports = () => {
 
   app.use(function (req, res, next) {
     var oldSend = res.send;
+    var flag = true;
 
     res.send = function () {
       // Initial variables
-      var data, message, status;
+      var data, message = '', status =  true;
 
       if (typeof arguments[0] === 'undefined') throw new Error('Response can not be empty.');
 
-      if (typeof arguments[0][0] === 'object') {
+      if (arguments[0].constructor === Object) {
+        data = arguments[0];
+      } else if (arguments[0].constructor === String) {
+        message = arguments[0];
+        status = false;
+      } else if (typeof arguments[0][0] === 'object') {
         data    = arguments[0][0] || {};
         message = arguments[0][1] || '';
         status  = !!arguments[0][2] || typeof arguments[0][2] === 'undefined' || false;
@@ -51,9 +57,10 @@ module.exports = () => {
         status  = !!arguments[0][1] || typeof arguments[0][1] === 'undefined' || false;
       }
 
-      if (typeof arguments[0] === 'object') {
+      if (typeof arguments[0] === 'object' || flag) {
         var handleResult = { status, message, data };
         arguments[0] = handleResult;
+        flag = false;
       }
 
       oldSend.apply(res, arguments);

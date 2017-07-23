@@ -26,13 +26,9 @@ class User {
 
       var result = { count, user };
 
-      response
-        .send([
-          'Something went wrong',
-          0
-        ]);
+      response.send(result);
     } catch (error) {
-      response.send(['error', 404]);
+      response.send('Something went wrong.');
     }
   }
 
