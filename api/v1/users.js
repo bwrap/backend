@@ -24,7 +24,12 @@ class User {
         .limit(pagination.limit)
         .sort({ createdAt: -1 });
 
-      response.send({ sucess: true, count: count, data: user });
+      var result = { count, user };
+
+      response
+        .send([
+          result
+        ]);
     } catch (error) {
       console.log(error);
       response.send({ success: false, message: error });
