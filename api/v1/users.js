@@ -28,11 +28,11 @@ class User {
 
       response
         .send([
-          result
+          'Something went wrong',
+          0
         ]);
     } catch (error) {
-      console.log(error);
-      response.send({ success: false, message: error });
+      response.send(['error', 404]);
     }
   }
 

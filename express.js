@@ -38,11 +38,18 @@ module.exports = () => {
 
     res.send = function () {
       // Initial variables
-      var data    = arguments[0][0];
-      var message = arguments[0][1];
-      var status  = arguments[0][2] || typeof arguments[0][2] === 'undefined' || false;
+      var data, message, status;
 
-      if (typeof data === 'undefined') throw new Error('Data response is required.');
+      if (typeof arguments[0] === 'undefined') throw new Error('Response can not be empty.');
+
+      if (typeof arguments[0][0] === 'object') {
+        data    = arguments[0][0] || {};
+        message = arguments[0][1] || '';
+        status  = !!arguments[0][2] || typeof arguments[0][2] === 'undefined' || false;
+      } else {
+        message = arguments[0][0] || '';
+        status  = !!arguments[0][1] || typeof arguments[0][1] === 'undefined' || false;
+      }
 
       if (typeof arguments[0] === 'object') {
         var handleResult = { status, message, data };
