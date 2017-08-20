@@ -1,0 +1,19 @@
+builder:
+  build: .
+  links:
+    - db
+  environment:
+    - MONGO_URL=mongodb://myMongoDB:27017/zeamo
+    - NODE_ENV=development
+  ports:
+    - 9000:9000
+db:
+  image: mongo
+  container_name: "myMongoDB"
+  ports:
+      - 27017:27017
+cache:
+  build: .
+  volumes:
+    - /tmp/cache:/cache
+  entrypoint: "true"
