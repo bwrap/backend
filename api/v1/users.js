@@ -28,7 +28,7 @@ class User {
 
       response.send(result);
     } catch (error) {
-      response.send('Something went wrong.');
+      response.send('Something went wrong');
     }
   }
 
