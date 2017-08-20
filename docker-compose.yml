@@ -1,5 +1,8 @@
 builder:
   build: .
+  volumes:
+    - "./:/app"
+    - /app/node_modules
   links:
     - db
   environment:

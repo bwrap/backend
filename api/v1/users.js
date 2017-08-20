@@ -26,7 +26,7 @@ class User {
 
       var result = { count, user };
 
-      response.send(result);
+      response.send('pruebas');
     } catch (error) {
       response.send('Something went wrong');
     }
