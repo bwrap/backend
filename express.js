@@ -78,10 +78,7 @@ module.exports = () => {
   glob(`.${V1}/public/**/*.js`, function (err, files) {
     files.forEach((routePath) => {
       const route = require(path.resolve(routePath));
-
-      console.log('RUTAS:', path.resolve(routePath));
       const router = require('./config/router')(express, route);
-
       app.use(`${V1}/`, router);
     });
   });
