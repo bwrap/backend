@@ -13,34 +13,36 @@ var Pluralize = require('pluralize');
    patch:   { method: 'patch' },
  };
 
- function getName (entity, isPluralize) {
-   var name = entity.name.toLowerCase();
+ function getName (Entity, isPluralize) {
+   var name = Entity.name.toLowerCase();
    return !isPluralize ? name : Pluralize(name);
  }
 
 module.exports = function routes (express, Entity) {
   const router = express.Router();
-  const entity = new Entity();
 
   Object
-    .getOwnPropertyNames(Entity.prototype)
+    .getOwnPropertyNames(Entity)
     .filter(r => r !== 'constructor')
     .forEach(function (index) {
       var rt = defaultRoutes[index];
+
+      if (typeof Entity[index] !== 'function') return;
+
       if (rt) {
         router[rt.method](
           `/${getName(Entity, rt.pluralize)}/${rt.path}`,
-          entity[index]
+          Entity[index]
         );
       } else {
         var parseName = index
           .split(/(?=[A-Z])/)
           .join('-')
           .toLocaleLowerCase();
-
+          debugger;
         router.post(
           `/${getName(Entity)}/${parseName}`,
-          entity[index]
+          Entity[index]
         );
       }
     });

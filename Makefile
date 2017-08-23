@@ -1,11 +1,11 @@
 # Project variables
 PROJECT_NAME ?= backend
-ORG_NAME ?= burritos
-REPO_NAME ?= amdvl/burritos
+ORG_NAME ?= backend
+REPO_NAME ?= amdvl/backend
 
 # Filenames
 DEV_COMPOSE_FILE := docker-compose.yml
-DEV_PROJECT := amdvl/burritos
+DEV_PROJECT := amdvl/backend
 
 .PHONY: test build release clean
 

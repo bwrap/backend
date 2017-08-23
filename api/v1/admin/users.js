@@ -2,9 +2,17 @@
 /**
  * Users
  */
-var UserModel = require('../models/users');
+var UserModel = require('../../models/users');
 
 class User {
+  constructor() {
+    this.name = 'user';
+    this.index = this.index.bind(this);
+    this.create = this.create.bind(this);
+    this.get = this.get.bind(this);
+    this.update = this.update.bind(this);
+    this.delete = this.delete.bind(this);
+  }
 
   /**
    * List of users with pagination and search param
@@ -26,7 +34,7 @@ class User {
 
       var result = { count, user };
 
-      response.send('pruebas');
+      response.send(result);
     } catch (error) {
       response.send('Something went wrong');
     }

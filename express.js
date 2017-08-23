@@ -8,11 +8,13 @@ var methodOverride = require('method-override');
 var cors = require('cors');
 var glob = require('glob');
 var morgan = require('morgan');
+const passport = require('passport');
 
 const {
   handler,
   logErrors,
   errorHandler,
+  ensureEnduserAuthenticated,
 } = require('./middlewares');
 
 const V1 = '/api/v1';
@@ -32,6 +34,8 @@ module.exports = () => {
   app.use(morgan(function (tokens, req, res) {
     return util.inspect({ params: req.params, body: req.body }, false, null);
   }));
+
+  app.use(passport.initialize());
 
   app.use(function (req, res, next) {
     var oldSend = res.send;
@@ -71,11 +75,22 @@ module.exports = () => {
   // Setting the app router and static folder
   app.use(express.static(path.resolve('./public')));
 
-  glob(`.${V1}/**/*.js`, function (err, files) {
+  glob(`.${V1}/public/**/*.js`, function (err, files) {
+    files.forEach((routePath) => {
+      const route = require(path.resolve(routePath));
+
+      console.log('RUTAS:', path.resolve(routePath));
+      const router = require('./config/router')(express, route);
+
+      app.use(`${V1}/`, router);
+    });
+  });
+
+  glob(`.${V1}/admin/**/*.js`, function (err, files) {
     files.forEach((routePath) => {
       const route = require(path.resolve(routePath));
       const router = require('./config/router')(express, route);
-      app.use(`${V1}/`, router);
+      app.use(`${V1}/admin`, ensureEnduserAuthenticated, router);
     });
   });
 

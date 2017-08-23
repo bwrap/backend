@@ -1,0 +1,838 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/armando/.nvm/versions/node/v7.7.4/bin/node',
+1 verbose cli   '/home/armando/.nvm/versions/node/v7.7.4/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'jwt' ]
+2 info using npm@4.1.2
+3 info using node@v7.7.4
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData jwt
+8 silly fetchNamedPackageData jwt
+9 silly mapToRegistry name jwt
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'jwt',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'jwt',
+12 silly mapToRegistry   name: 'jwt',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/jwt
+14 verbose get https://registry.npmjs.org/jwt not expired, no request
+15 silly install normalizeTree
+16 silly loadCurrentTree Finishing
+17 silly loadIdealTree Starting
+18 silly install loadIdealTree
+19 silly cloneCurrentTree Starting
+20 silly install cloneCurrentTreeToIdealTree
+21 silly cloneCurrentTree Finishing
+22 silly loadShrinkwrap Starting
+23 silly install loadShrinkwrap
+24 silly loadShrinkwrap Finishing
+25 silly loadAllDepsIntoIdealTree Starting
+26 silly install loadAllDepsIntoIdealTree
+27 silly resolveWithNewModule jwt@0.2.0 checking installable status
+28 silly cache add args [ 'jwt', null ]
+29 verbose cache add spec jwt
+30 silly cache add parsed spec Result {
+30 silly cache add   raw: 'jwt',
+30 silly cache add   scope: null,
+30 silly cache add   escapedName: 'jwt',
+30 silly cache add   name: 'jwt',
+30 silly cache add   rawSpec: '',
+30 silly cache add   spec: 'latest',
+30 silly cache add   type: 'tag' }
+31 silly addNamed jwt@latest
+32 verbose addNamed "latest" is being treated as a dist-tag for jwt
+33 info addNameTag [ 'jwt', 'latest' ]
+34 silly mapToRegistry name jwt
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry data Result {
+37 silly mapToRegistry   raw: 'jwt',
+37 silly mapToRegistry   scope: null,
+37 silly mapToRegistry   escapedName: 'jwt',
+37 silly mapToRegistry   name: 'jwt',
+37 silly mapToRegistry   rawSpec: '',
+37 silly mapToRegistry   spec: 'latest',
+37 silly mapToRegistry   type: 'tag' }
+38 silly mapToRegistry uri https://registry.npmjs.org/jwt
+39 verbose addNameTag registry:https://registry.npmjs.org/jwt not in flight; fetching
+40 verbose get https://registry.npmjs.org/jwt not expired, no request
+41 silly addNameTag next cb for jwt with tag latest
+42 silly addNamed jwt@0.2.0
+43 verbose addNamed "0.2.0" is a plain semver version for jwt
+44 silly cache afterAdd jwt@0.2.0
+45 verbose afterAdd /home/armando/.npm/jwt/0.2.0/package/package.json not in flight; writing
+46 verbose correctMkdir /home/armando/.npm correctMkdir not in flight; initializing
+47 verbose afterAdd /home/armando/.npm/jwt/0.2.0/package/package.json written
+48 silly fetchNamedPackageData node-base64
+49 silly mapToRegistry name node-base64
+50 silly mapToRegistry using default registry
+51 silly mapToRegistry registry https://registry.npmjs.org/
+52 silly mapToRegistry data Result {
+52 silly mapToRegistry   raw: 'node-base64',
+52 silly mapToRegistry   scope: null,
+52 silly mapToRegistry   escapedName: 'node-base64',
+52 silly mapToRegistry   name: 'node-base64',
+52 silly mapToRegistry   rawSpec: '',
+52 silly mapToRegistry   spec: 'latest',
+52 silly mapToRegistry   type: 'tag' }
+53 silly mapToRegistry uri https://registry.npmjs.org/node-base64
+54 verbose get https://registry.npmjs.org/node-base64 not expired, no request
+55 silly pickManifestFromRegistryMetadata spec 0.0.1 tag latest versions [ '0.0.1' ]
+56 silly resolveWithNewModule node-base64@0.0.1 checking installable status
+57 silly cache add args [ 'node-base64@0.0.1', null ]
+58 verbose cache add spec node-base64@0.0.1
+59 silly cache add parsed spec Result {
+59 silly cache add   raw: 'node-base64@0.0.1',
+59 silly cache add   scope: null,
+59 silly cache add   escapedName: 'node-base64',
+59 silly cache add   name: 'node-base64',
+59 silly cache add   rawSpec: '0.0.1',
+59 silly cache add   spec: '0.0.1',
+59 silly cache add   type: 'version' }
+60 silly addNamed node-base64@0.0.1
+61 verbose addNamed "0.0.1" is a plain semver version for node-base64
+62 silly mapToRegistry name node-base64
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry data Result {
+65 silly mapToRegistry   raw: 'node-base64',
+65 silly mapToRegistry   scope: null,
+65 silly mapToRegistry   escapedName: 'node-base64',
+65 silly mapToRegistry   name: 'node-base64',
+65 silly mapToRegistry   rawSpec: '',
+65 silly mapToRegistry   spec: 'latest',
+65 silly mapToRegistry   type: 'tag' }
+66 silly mapToRegistry uri https://registry.npmjs.org/node-base64
+67 verbose addNameVersion registry:https://registry.npmjs.org/node-base64 not in flight; fetching
+68 verbose get https://registry.npmjs.org/node-base64 not expired, no request
+69 silly cache afterAdd node-base64@0.0.1
+70 verbose afterAdd /home/armando/.npm/node-base64/0.0.1/package/package.json not in flight; writing
+71 verbose correctMkdir /home/armando/.npm correctMkdir not in flight; initializing
+72 verbose afterAdd /home/armando/.npm/node-base64/0.0.1/package/package.json written
+73 silly loadAllDepsIntoIdealTree Finishing
+74 silly loadIdealTree Finishing
+75 silly currentTree backend@1.0.0
+75 silly currentTree ├── abbrev@1.1.0
+75 silly currentTree ├── accepts@1.3.3
+75 silly currentTree ├── ajv@4.11.8
+75 silly currentTree ├── ansi-regex@2.1.1
+75 silly currentTree ├── aproba@1.1.2
+75 silly currentTree ├── are-we-there-yet@1.1.4
+75 silly currentTree ├── array-flatten@1.1.1
+75 silly currentTree ├── asn1@0.2.3
+75 silly currentTree ├── assert-plus@0.2.0
+75 silly currentTree ├── async@2.1.4
+75 silly currentTree ├── asynckit@0.4.0
+75 silly currentTree ├── aws-sign2@0.6.0
+75 silly currentTree ├── aws4@1.6.0
+75 silly currentTree ├── balanced-match@1.0.0
+75 silly currentTree ├── base64url@2.0.0
+75 silly currentTree ├── basic-auth@1.1.0
+75 silly currentTree ├── bcrypt-pbkdf@1.0.1
+75 silly currentTree ├── bcrypt@1.0.2
+75 silly currentTree ├── bindings@1.2.1
+75 silly currentTree ├── block-stream@0.0.9
+75 silly currentTree ├── bluebird@3.5.0
+75 silly currentTree ├─┬ body-parser@1.17.2
+75 silly currentTree │ ├── debug@2.6.7
+75 silly currentTree │ └── ms@2.0.0
+75 silly currentTree ├── boom@2.10.1
+75 silly currentTree ├── brace-expansion@1.1.8
+75 silly currentTree ├── browser-stdout@1.3.0
+75 silly currentTree ├── bson@1.0.4
+75 silly currentTree ├── buffer-equal-constant-time@1.0.1
+75 silly currentTree ├── buffer-shims@1.0.0
+75 silly currentTree ├── bytes@2.4.0
+75 silly currentTree ├── caseless@0.12.0
+75 silly currentTree ├── co@4.6.0
+75 silly currentTree ├── code-point-at@1.1.0
+75 silly currentTree ├── combined-stream@1.0.5
+75 silly currentTree ├── commander@2.9.0
+75 silly currentTree ├── component-emitter@1.2.1
+75 silly currentTree ├── concat-map@0.0.1
+75 silly currentTree ├── console-control-strings@1.1.0
+75 silly currentTree ├── content-disposition@0.5.2
+75 silly currentTree ├── content-type@1.0.2
+75 silly currentTree ├── cookie-signature@1.0.6
+75 silly currentTree ├── cookie@0.3.1
+75 silly currentTree ├── cookiejar@2.1.1
+75 silly currentTree ├── core-util-is@1.0.2
+75 silly currentTree ├── cors@2.8.4
+75 silly currentTree ├── cryptiles@2.0.5
+75 silly currentTree ├─┬ dashdash@1.14.1
+75 silly currentTree │ └── assert-plus@1.0.0
+75 silly currentTree ├── debug@2.2.0
+75 silly currentTree ├── deep-extend@0.4.2
+75 silly currentTree ├── delayed-stream@1.0.0
+75 silly currentTree ├── delegates@1.0.0
+75 silly currentTree ├── depd@1.1.1
+75 silly currentTree ├── destroy@1.0.4
+75 silly currentTree ├── diff@3.2.0
+75 silly currentTree ├── ecc-jsbn@0.1.1
+75 silly currentTree ├── ecdsa-sig-formatter@1.0.9
+75 silly currentTree ├── ee-first@1.1.1
+75 silly currentTree ├── encodeurl@1.0.1
+75 silly currentTree ├── es6-promise@3.2.1
+75 silly currentTree ├── escape-html@1.0.3
+75 silly currentTree ├── escape-string-regexp@1.0.5
+75 silly currentTree ├── etag@1.8.0
+75 silly currentTree ├─┬ express@4.15.3
+75 silly currentTree │ ├── debug@2.6.7
+75 silly currentTree │ └── ms@2.0.0
+75 silly currentTree ├── extend@3.0.1
+75 silly currentTree ├── extsprintf@1.3.0
+75 silly currentTree ├─┬ finalhandler@1.0.4
+75 silly currentTree │ ├── debug@2.6.8
+75 silly currentTree │ └── ms@2.0.0
+75 silly currentTree ├── forever-agent@0.6.1
+75 silly currentTree ├── form-data@2.1.4
+75 silly currentTree ├── formidable@1.1.1
+75 silly currentTree ├── forwarded@0.1.0
+75 silly currentTree ├── fresh@0.5.0
+75 silly currentTree ├── fs.realpath@1.0.0
+75 silly currentTree ├── fstream-ignore@1.0.5
+75 silly currentTree ├── fstream@1.0.11
+75 silly currentTree ├── gauge@2.7.4
+75 silly currentTree ├─┬ getpass@0.1.7
+75 silly currentTree │ └── assert-plus@1.0.0
+75 silly currentTree ├─┬ glob@4.0.5
+75 silly currentTree │ ├── graceful-fs@3.0.11
+75 silly currentTree │ └── minimatch@1.0.0
+75 silly currentTree ├── graceful-fs@4.1.11
+75 silly currentTree ├── graceful-readlink@1.0.1
+75 silly currentTree ├── growl@1.9.2
+75 silly currentTree ├── har-schema@1.0.5
+75 silly currentTree ├── har-validator@4.2.1
+75 silly currentTree ├── has-flag@1.0.0
+75 silly currentTree ├── has-unicode@2.0.1
+75 silly currentTree ├── hawk@3.1.3
+75 silly currentTree ├── hoek@2.16.3
+75 silly currentTree ├── hooks-fixed@2.0.0
+75 silly currentTree ├── http-errors@1.6.2
+75 silly currentTree ├── http-signature@1.1.1
+75 silly currentTree ├── iconv-lite@0.4.15
+75 silly currentTree ├── inflight@1.0.6
+75 silly currentTree ├── inherits@2.0.3
+75 silly currentTree ├── ini@1.3.4
+75 silly currentTree ├── ipaddr.js@1.4.0
+75 silly currentTree ├── is-fullwidth-code-point@1.0.0
+75 silly currentTree ├── is-typedarray@1.0.0
+75 silly currentTree ├── isarray@1.0.0
+75 silly currentTree ├── isemail@1.2.0
+75 silly currentTree ├── isstream@0.1.2
+75 silly currentTree ├── joi@6.10.1
+75 silly currentTree ├── jsbn@0.1.1
+75 silly currentTree ├── json-schema@0.2.3
+75 silly currentTree ├── json-stable-stringify@1.0.1
+75 silly currentTree ├── json-stringify-safe@5.0.1
+75 silly currentTree ├── json3@3.3.2
+75 silly currentTree ├── jsonify@0.0.0
+75 silly currentTree ├─┬ jsonwebtoken@7.4.3
+75 silly currentTree │ └── ms@2.0.0
+75 silly currentTree ├─┬ jsprim@1.4.1
+75 silly currentTree │ └── assert-plus@1.0.0
+75 silly currentTree ├── jwa@1.1.5
+75 silly currentTree ├── jws@3.1.4
+75 silly currentTree ├── jwt-simple@0.5.1
+75 silly currentTree ├── kareem@1.2.1
+75 silly currentTree ├── lodash._baseassign@3.2.0
+75 silly currentTree ├── lodash._basecopy@3.0.1
+75 silly currentTree ├── lodash._basecreate@3.0.3
+75 silly currentTree ├── lodash._getnative@3.9.1
+75 silly currentTree ├── lodash._isiterateecall@3.0.9
+75 silly currentTree ├── lodash.create@3.1.1
+75 silly currentTree ├── lodash.isarguments@3.1.0
+75 silly currentTree ├── lodash.isarray@3.0.4
+75 silly currentTree ├── lodash.keys@3.1.2
+75 silly currentTree ├── lodash.once@4.1.1
+75 silly currentTree ├── lodash@4.17.4
+75 silly currentTree ├── lru-cache@2.7.3
+75 silly currentTree ├── media-typer@0.3.0
+75 silly currentTree ├── merge-descriptors@1.0.1
+75 silly currentTree ├─┬ method-override@2.3.9
+75 silly currentTree │ ├── debug@2.6.8
+75 silly currentTree │ └── ms@2.0.0
+75 silly currentTree ├── methods@1.1.2
+75 silly currentTree ├── micro-mongo@1.0.0
+75 silly currentTree ├── mime-db@1.29.0
+75 silly currentTree ├── mime-types@2.1.16
+75 silly currentTree ├── mime@1.3.4
+75 silly currentTree ├── minimatch@3.0.4
+75 silly currentTree ├── minimist@0.0.8
+75 silly currentTree ├── mkdirp@0.5.1
+75 silly currentTree ├─┬ mocha@3.4.2
+75 silly currentTree │ ├── debug@2.6.0
+75 silly currentTree │ ├── glob@7.1.1
+75 silly currentTree │ └── ms@0.7.2
+75 silly currentTree ├── moment@2.18.1
+75 silly currentTree ├── mongodb-core@2.1.9
+75 silly currentTree ├─┬ mongodb@2.2.25
+75 silly currentTree │ ├── readable-stream@2.1.5
+75 silly currentTree │ └── string_decoder@0.10.31
+75 silly currentTree ├── mongoose-middleware@1.0.0
+75 silly currentTree ├─┬ mongoose@4.9.3
+75 silly currentTree │ └── ms@0.7.2
+75 silly currentTree ├─┬ morgan@1.8.2
+75 silly currentTree │ ├── debug@2.6.8
+75 silly currentTree │ └── ms@2.0.0
+75 silly currentTree ├── mpath@0.2.1
+75 silly currentTree ├── mpromise@0.5.5
+75 silly currentTree ├─┬ mquery@2.3.0
+75 silly currentTree │ ├── bluebird@2.10.2
+75 silly currentTree │ └── sliced@0.0.5
+75 silly currentTree ├── ms@0.7.1
+75 silly currentTree ├── muri@1.2.1
+75 silly currentTree ├── nan@2.5.0
+75 silly currentTree ├── natives@1.1.0
+75 silly currentTree ├── negotiator@0.6.1
+75 silly currentTree ├── node-pre-gyp@0.6.32
+75 silly currentTree ├── nopt@3.0.6
+75 silly currentTree ├── npmlog@4.1.2
+75 silly currentTree ├── number-is-nan@1.0.1
+75 silly currentTree ├── oauth-sign@0.8.2
+75 silly currentTree ├── object-assign@4.1.1
+75 silly currentTree ├── on-finished@2.3.0
+75 silly currentTree ├── on-headers@1.0.1
+75 silly currentTree ├── once@1.4.0
+75 silly currentTree ├── parseurl@1.3.1
+75 silly currentTree ├── passport-jwt@2.2.1
+75 silly currentTree ├── passport-strategy@1.0.0
+75 silly currentTree ├── passport@0.3.2
+75 silly currentTree ├── path-is-absolute@1.0.1
+75 silly currentTree ├── path-to-regexp@0.1.7
+75 silly currentTree ├── pause@0.0.1
+75 silly currentTree ├── performance-now@0.2.0
+75 silly currentTree ├── pluralize@5.0.0
+75 silly currentTree ├── process-nextick-args@1.0.7
+75 silly currentTree ├── proxy-addr@1.1.5
+75 silly currentTree ├── punycode@1.4.1
+75 silly currentTree ├── qs@6.4.0
+75 silly currentTree ├── range-parser@1.2.0
+75 silly currentTree ├── raw-body@2.2.0
+75 silly currentTree ├─┬ rc@1.1.7
+75 silly currentTree │ └── minimist@1.2.0
+75 silly currentTree ├── readable-stream@2.3.3
+75 silly currentTree ├── regexp-clone@0.0.1
+75 silly currentTree ├── request@2.81.0
+75 silly currentTree ├── require_optional@1.0.1
+75 silly currentTree ├── resolve-from@2.0.0
+75 silly currentTree ├─┬ rimraf@2.5.4
+75 silly currentTree │ └── glob@7.1.2
+75 silly currentTree ├── safe-buffer@5.1.1
+75 silly currentTree ├── semver@5.3.0
+75 silly currentTree ├─┬ send@0.15.3
+75 silly currentTree │ ├── debug@2.6.7
+75 silly currentTree │ └── ms@2.0.0
+75 silly currentTree ├── serve-static@1.12.3
+75 silly currentTree ├── set-blocking@2.0.0
+75 silly currentTree ├── setprototypeof@1.0.3
+75 silly currentTree ├── sigmund@1.0.1
+75 silly currentTree ├── signal-exit@3.0.2
+75 silly currentTree ├── sliced@1.0.1
+75 silly currentTree ├── sntp@1.0.9
+75 silly currentTree ├─┬ sshpk@1.13.1
+75 silly currentTree │ └── assert-plus@1.0.0
+75 silly currentTree ├── statuses@1.3.1
+75 silly currentTree ├── string_decoder@1.0.3
+75 silly currentTree ├── string-width@1.0.2
+75 silly currentTree ├── stringstream@0.0.5
+75 silly currentTree ├── strip-ansi@3.0.1
+75 silly currentTree ├── strip-json-comments@2.0.1
+75 silly currentTree ├─┬ superagent@3.6.0
+75 silly currentTree │ ├── debug@2.6.8
+75 silly currentTree │ ├── mime@1.3.6
+75 silly currentTree │ └── ms@2.0.0
+75 silly currentTree ├── supertest@3.0.0
+75 silly currentTree ├── supports-color@3.1.2
+75 silly currentTree ├─┬ tar-pack@3.3.0
+75 silly currentTree │ ├── once@1.3.3
+75 silly currentTree │ ├── readable-stream@2.1.5
+75 silly currentTree │ └── string_decoder@0.10.31
+75 silly currentTree ├── tar@2.2.1
+75 silly currentTree ├── topo@1.1.0
+75 silly currentTree ├── tough-cookie@2.3.2
+75 silly currentTree ├── tunnel-agent@0.6.0
+75 silly currentTree ├── tweetnacl@0.14.5
+75 silly currentTree ├── type-is@1.6.15
+75 silly currentTree ├── uid-number@0.0.6
+75 silly currentTree ├── unpipe@1.0.0
+75 silly currentTree ├── util-deprecate@1.0.2
+75 silly currentTree ├── utils-merge@1.0.0
+75 silly currentTree ├── uuid@3.1.0
+75 silly currentTree ├── validator@8.0.0
+75 silly currentTree ├── vary@1.1.1
+75 silly currentTree ├─┬ verror@1.10.0
+75 silly currentTree │ └── assert-plus@1.0.0
+75 silly currentTree ├── wide-align@1.1.2
+75 silly currentTree ├── wrappy@1.0.2
+75 silly currentTree └── xtend@4.0.1
+76 silly idealTree backend@1.0.0
+76 silly idealTree ├── abbrev@1.1.0
+76 silly idealTree ├── accepts@1.3.3
+76 silly idealTree ├── ajv@4.11.8
+76 silly idealTree ├── ansi-regex@2.1.1
+76 silly idealTree ├── aproba@1.1.2
+76 silly idealTree ├── are-we-there-yet@1.1.4
+76 silly idealTree ├── array-flatten@1.1.1
+76 silly idealTree ├── asn1@0.2.3
+76 silly idealTree ├── assert-plus@0.2.0
+76 silly idealTree ├── async@2.1.4
+76 silly idealTree ├── asynckit@0.4.0
+76 silly idealTree ├── aws-sign2@0.6.0
+76 silly idealTree ├── aws4@1.6.0
+76 silly idealTree ├── balanced-match@1.0.0
+76 silly idealTree ├── base64url@2.0.0
+76 silly idealTree ├── basic-auth@1.1.0
+76 silly idealTree ├── bcrypt-pbkdf@1.0.1
+76 silly idealTree ├── bcrypt@1.0.2
+76 silly idealTree ├── bindings@1.2.1
+76 silly idealTree ├── block-stream@0.0.9
+76 silly idealTree ├── bluebird@3.5.0
+76 silly idealTree ├─┬ body-parser@1.17.2
+76 silly idealTree │ ├── debug@2.6.7
+76 silly idealTree │ └── ms@2.0.0
+76 silly idealTree ├── boom@2.10.1
+76 silly idealTree ├── brace-expansion@1.1.8
+76 silly idealTree ├── browser-stdout@1.3.0
+76 silly idealTree ├── bson@1.0.4
+76 silly idealTree ├── buffer-equal-constant-time@1.0.1
+76 silly idealTree ├── buffer-shims@1.0.0
+76 silly idealTree ├── bytes@2.4.0
+76 silly idealTree ├── caseless@0.12.0
+76 silly idealTree ├── co@4.6.0
+76 silly idealTree ├── code-point-at@1.1.0
+76 silly idealTree ├── combined-stream@1.0.5
+76 silly idealTree ├── commander@2.9.0
+76 silly idealTree ├── component-emitter@1.2.1
+76 silly idealTree ├── concat-map@0.0.1
+76 silly idealTree ├── console-control-strings@1.1.0
+76 silly idealTree ├── content-disposition@0.5.2
+76 silly idealTree ├── content-type@1.0.2
+76 silly idealTree ├── cookie-signature@1.0.6
+76 silly idealTree ├── cookie@0.3.1
+76 silly idealTree ├── cookiejar@2.1.1
+76 silly idealTree ├── core-util-is@1.0.2
+76 silly idealTree ├── cors@2.8.4
+76 silly idealTree ├── cryptiles@2.0.5
+76 silly idealTree ├─┬ dashdash@1.14.1
+76 silly idealTree │ └── assert-plus@1.0.0
+76 silly idealTree ├── debug@2.2.0
+76 silly idealTree ├── deep-extend@0.4.2
+76 silly idealTree ├── delayed-stream@1.0.0
+76 silly idealTree ├── delegates@1.0.0
+76 silly idealTree ├── depd@1.1.1
+76 silly idealTree ├── destroy@1.0.4
+76 silly idealTree ├── diff@3.2.0
+76 silly idealTree ├── ecc-jsbn@0.1.1
+76 silly idealTree ├── ecdsa-sig-formatter@1.0.9
+76 silly idealTree ├── ee-first@1.1.1
+76 silly idealTree ├── encodeurl@1.0.1
+76 silly idealTree ├── es6-promise@3.2.1
+76 silly idealTree ├── escape-html@1.0.3
+76 silly idealTree ├── escape-string-regexp@1.0.5
+76 silly idealTree ├── etag@1.8.0
+76 silly idealTree ├─┬ express@4.15.3
+76 silly idealTree │ ├── debug@2.6.7
+76 silly idealTree │ └── ms@2.0.0
+76 silly idealTree ├── extend@3.0.1
+76 silly idealTree ├── extsprintf@1.3.0
+76 silly idealTree ├─┬ finalhandler@1.0.4
+76 silly idealTree │ ├── debug@2.6.8
+76 silly idealTree │ └── ms@2.0.0
+76 silly idealTree ├── forever-agent@0.6.1
+76 silly idealTree ├── form-data@2.1.4
+76 silly idealTree ├── formidable@1.1.1
+76 silly idealTree ├── forwarded@0.1.0
+76 silly idealTree ├── fresh@0.5.0
+76 silly idealTree ├── fs.realpath@1.0.0
+76 silly idealTree ├── fstream-ignore@1.0.5
+76 silly idealTree ├── fstream@1.0.11
+76 silly idealTree ├── gauge@2.7.4
+76 silly idealTree ├─┬ getpass@0.1.7
+76 silly idealTree │ └── assert-plus@1.0.0
+76 silly idealTree ├─┬ glob@4.0.5
+76 silly idealTree │ ├── graceful-fs@3.0.11
+76 silly idealTree │ └── minimatch@1.0.0
+76 silly idealTree ├── graceful-fs@4.1.11
+76 silly idealTree ├── graceful-readlink@1.0.1
+76 silly idealTree ├── growl@1.9.2
+76 silly idealTree ├── har-schema@1.0.5
+76 silly idealTree ├── har-validator@4.2.1
+76 silly idealTree ├── has-flag@1.0.0
+76 silly idealTree ├── has-unicode@2.0.1
+76 silly idealTree ├── hawk@3.1.3
+76 silly idealTree ├── hoek@2.16.3
+76 silly idealTree ├── hooks-fixed@2.0.0
+76 silly idealTree ├── http-errors@1.6.2
+76 silly idealTree ├── http-signature@1.1.1
+76 silly idealTree ├── iconv-lite@0.4.15
+76 silly idealTree ├── inflight@1.0.6
+76 silly idealTree ├── inherits@2.0.3
+76 silly idealTree ├── ini@1.3.4
+76 silly idealTree ├── ipaddr.js@1.4.0
+76 silly idealTree ├── is-fullwidth-code-point@1.0.0
+76 silly idealTree ├── is-typedarray@1.0.0
+76 silly idealTree ├── isarray@1.0.0
+76 silly idealTree ├── isemail@1.2.0
+76 silly idealTree ├── isstream@0.1.2
+76 silly idealTree ├── joi@6.10.1
+76 silly idealTree ├── jsbn@0.1.1
+76 silly idealTree ├── json-schema@0.2.3
+76 silly idealTree ├── json-stable-stringify@1.0.1
+76 silly idealTree ├── json-stringify-safe@5.0.1
+76 silly idealTree ├── json3@3.3.2
+76 silly idealTree ├── jsonify@0.0.0
+76 silly idealTree ├─┬ jsonwebtoken@7.4.3
+76 silly idealTree │ └── ms@2.0.0
+76 silly idealTree ├─┬ jsprim@1.4.1
+76 silly idealTree │ └── assert-plus@1.0.0
+76 silly idealTree ├── jwa@1.1.5
+76 silly idealTree ├── jws@3.1.4
+76 silly idealTree ├── jwt-simple@0.5.1
+76 silly idealTree ├── jwt@0.2.0
+76 silly idealTree ├── kareem@1.2.1
+76 silly idealTree ├── lodash._baseassign@3.2.0
+76 silly idealTree ├── lodash._basecopy@3.0.1
+76 silly idealTree ├── lodash._basecreate@3.0.3
+76 silly idealTree ├── lodash._getnative@3.9.1
+76 silly idealTree ├── lodash._isiterateecall@3.0.9
+76 silly idealTree ├── lodash.create@3.1.1
+76 silly idealTree ├── lodash.isarguments@3.1.0
+76 silly idealTree ├── lodash.isarray@3.0.4
+76 silly idealTree ├── lodash.keys@3.1.2
+76 silly idealTree ├── lodash.once@4.1.1
+76 silly idealTree ├── lodash@4.17.4
+76 silly idealTree ├── lru-cache@2.7.3
+76 silly idealTree ├── media-typer@0.3.0
+76 silly idealTree ├── merge-descriptors@1.0.1
+76 silly idealTree ├─┬ method-override@2.3.9
+76 silly idealTree │ ├── debug@2.6.8
+76 silly idealTree │ └── ms@2.0.0
+76 silly idealTree ├── methods@1.1.2
+76 silly idealTree ├── micro-mongo@1.0.0
+76 silly idealTree ├── mime-db@1.29.0
+76 silly idealTree ├── mime-types@2.1.16
+76 silly idealTree ├── mime@1.3.4
+76 silly idealTree ├── minimatch@3.0.4
+76 silly idealTree ├── minimist@0.0.8
+76 silly idealTree ├── mkdirp@0.5.1
+76 silly idealTree ├─┬ mocha@3.4.2
+76 silly idealTree │ ├── debug@2.6.0
+76 silly idealTree │ ├── glob@7.1.1
+76 silly idealTree │ └── ms@0.7.2
+76 silly idealTree ├── moment@2.18.1
+76 silly idealTree ├── mongodb-core@2.1.9
+76 silly idealTree ├─┬ mongodb@2.2.25
+76 silly idealTree │ ├── readable-stream@2.1.5
+76 silly idealTree │ └── string_decoder@0.10.31
+76 silly idealTree ├── mongoose-middleware@1.0.0
+76 silly idealTree ├─┬ mongoose@4.9.3
+76 silly idealTree │ └── ms@0.7.2
+76 silly idealTree ├─┬ morgan@1.8.2
+76 silly idealTree │ ├── debug@2.6.8
+76 silly idealTree │ └── ms@2.0.0
+76 silly idealTree ├── mpath@0.2.1
+76 silly idealTree ├── mpromise@0.5.5
+76 silly idealTree ├─┬ mquery@2.3.0
+76 silly idealTree │ ├── bluebird@2.10.2
+76 silly idealTree │ └── sliced@0.0.5
+76 silly idealTree ├── ms@0.7.1
+76 silly idealTree ├── muri@1.2.1
+76 silly idealTree ├── nan@2.5.0
+76 silly idealTree ├── natives@1.1.0
+76 silly idealTree ├── negotiator@0.6.1
+76 silly idealTree ├── node-base64@0.0.1
+76 silly idealTree ├── node-pre-gyp@0.6.32
+76 silly idealTree ├── nopt@3.0.6
+76 silly idealTree ├── npmlog@4.1.2
+76 silly idealTree ├── number-is-nan@1.0.1
+76 silly idealTree ├── oauth-sign@0.8.2
+76 silly idealTree ├── object-assign@4.1.1
+76 silly idealTree ├── on-finished@2.3.0
+76 silly idealTree ├── on-headers@1.0.1
+76 silly idealTree ├── once@1.4.0
+76 silly idealTree ├── parseurl@1.3.1
+76 silly idealTree ├── passport-jwt@2.2.1
+76 silly idealTree ├── passport-strategy@1.0.0
+76 silly idealTree ├── passport@0.3.2
+76 silly idealTree ├── path-is-absolute@1.0.1
+76 silly idealTree ├── path-to-regexp@0.1.7
+76 silly idealTree ├── pause@0.0.1
+76 silly idealTree ├── performance-now@0.2.0
+76 silly idealTree ├── pluralize@5.0.0
+76 silly idealTree ├── process-nextick-args@1.0.7
+76 silly idealTree ├── proxy-addr@1.1.5
+76 silly idealTree ├── punycode@1.4.1
+76 silly idealTree ├── qs@6.4.0
+76 silly idealTree ├── range-parser@1.2.0
+76 silly idealTree ├── raw-body@2.2.0
+76 silly idealTree ├─┬ rc@1.1.7
+76 silly idealTree │ └── minimist@1.2.0
+76 silly idealTree ├── readable-stream@2.3.3
+76 silly idealTree ├── regexp-clone@0.0.1
+76 silly idealTree ├── request@2.81.0
+76 silly idealTree ├── require_optional@1.0.1
+76 silly idealTree ├── resolve-from@2.0.0
+76 silly idealTree ├─┬ rimraf@2.5.4
+76 silly idealTree │ └── glob@7.1.2
+76 silly idealTree ├── safe-buffer@5.1.1
+76 silly idealTree ├── semver@5.3.0
+76 silly idealTree ├─┬ send@0.15.3
+76 silly idealTree │ ├── debug@2.6.7
+76 silly idealTree │ └── ms@2.0.0
+76 silly idealTree ├── serve-static@1.12.3
+76 silly idealTree ├── set-blocking@2.0.0
+76 silly idealTree ├── setprototypeof@1.0.3
+76 silly idealTree ├── sigmund@1.0.1
+76 silly idealTree ├── signal-exit@3.0.2
+76 silly idealTree ├── sliced@1.0.1
+76 silly idealTree ├── sntp@1.0.9
+76 silly idealTree ├─┬ sshpk@1.13.1
+76 silly idealTree │ └── assert-plus@1.0.0
+76 silly idealTree ├── statuses@1.3.1
+76 silly idealTree ├── string_decoder@1.0.3
+76 silly idealTree ├── string-width@1.0.2
+76 silly idealTree ├── stringstream@0.0.5
+76 silly idealTree ├── strip-ansi@3.0.1
+76 silly idealTree ├── strip-json-comments@2.0.1
+76 silly idealTree ├─┬ superagent@3.6.0
+76 silly idealTree │ ├── debug@2.6.8
+76 silly idealTree │ ├── mime@1.3.6
+76 silly idealTree │ └── ms@2.0.0
+76 silly idealTree ├── supertest@3.0.0
+76 silly idealTree ├── supports-color@3.1.2
+76 silly idealTree ├─┬ tar-pack@3.3.0
+76 silly idealTree │ ├── once@1.3.3
+76 silly idealTree │ ├── readable-stream@2.1.5
+76 silly idealTree │ └── string_decoder@0.10.31
+76 silly idealTree ├── tar@2.2.1
+76 silly idealTree ├── topo@1.1.0
+76 silly idealTree ├── tough-cookie@2.3.2
+76 silly idealTree ├── tunnel-agent@0.6.0
+76 silly idealTree ├── tweetnacl@0.14.5
+76 silly idealTree ├── type-is@1.6.15
+76 silly idealTree ├── uid-number@0.0.6
+76 silly idealTree ├── unpipe@1.0.0
+76 silly idealTree ├── util-deprecate@1.0.2
+76 silly idealTree ├── utils-merge@1.0.0
+76 silly idealTree ├── uuid@3.1.0
+76 silly idealTree ├── validator@8.0.0
+76 silly idealTree ├── vary@1.1.1
+76 silly idealTree ├─┬ verror@1.10.0
+76 silly idealTree │ └── assert-plus@1.0.0
+76 silly idealTree ├── wide-align@1.1.2
+76 silly idealTree ├── wrappy@1.0.2
+76 silly idealTree └── xtend@4.0.1
+77 silly generateActionsToTake Starting
+78 silly install generateActionsToTake
+79 silly generateActionsToTake Finishing
+80 silly diffTrees action count 2
+81 silly diffTrees add node-base64@0.0.1
+82 silly diffTrees add jwt@0.2.0
+83 silly decomposeActions action count 16
+84 silly decomposeActions fetch node-base64@0.0.1
+85 silly decomposeActions extract node-base64@0.0.1
+86 silly decomposeActions test node-base64@0.0.1
+87 silly decomposeActions preinstall node-base64@0.0.1
+88 silly decomposeActions build node-base64@0.0.1
+89 silly decomposeActions install node-base64@0.0.1
+90 silly decomposeActions postinstall node-base64@0.0.1
+91 silly decomposeActions finalize node-base64@0.0.1
+92 silly decomposeActions fetch jwt@0.2.0
+93 silly decomposeActions extract jwt@0.2.0
+94 silly decomposeActions test jwt@0.2.0
+95 silly decomposeActions preinstall jwt@0.2.0
+96 silly decomposeActions build jwt@0.2.0
+97 silly decomposeActions install jwt@0.2.0
+98 silly decomposeActions postinstall jwt@0.2.0
+99 silly decomposeActions finalize jwt@0.2.0
+100 silly runTopLevelLifecycles Starting
+101 silly executeActions Starting
+102 silly install executeActions
+103 silly doSerial global-install 0
+104 silly doParallel fetch 2
+105 verbose correctMkdir /home/armando/.npm/_locks correctMkdir not in flight; initializing
+106 verbose lock using /home/armando/.npm/_locks/staging-0872ed9ae1529a34.lock for /home/armando/dev/bwrap/backend/node_modules/.staging
+107 silly doParallel extract 2
+108 silly extract node-base64@0.0.1
+109 silly extract jwt@0.2.0
+110 verbose unbuild node_modules/.staging/jwt-f27dbf7a
+111 verbose unbuild node_modules/.staging/node-base64-ebee5118
+112 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/.staging/jwt-f27dbf7a is being purged from base /home/armando/dev/bwrap/backend
+113 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/.staging/jwt-f27dbf7a
+114 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/.staging/node-base64-ebee5118 is being purged from base /home/armando/dev/bwrap/backend
+115 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/.staging/node-base64-ebee5118
+116 verbose tar unpack /home/armando/.npm/jwt/0.2.0/package.tgz
+117 verbose tar unpacking to /home/armando/dev/bwrap/backend/node_modules/.staging/jwt-f27dbf7a
+118 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/.staging/jwt-f27dbf7a is being purged
+119 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/.staging/jwt-f27dbf7a
+120 verbose tar unpack /home/armando/.npm/node-base64/0.0.1/package.tgz
+121 verbose tar unpacking to /home/armando/dev/bwrap/backend/node_modules/.staging/node-base64-ebee5118
+122 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/.staging/node-base64-ebee5118 is being purged
+123 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/.staging/node-base64-ebee5118
+124 silly gunzTarPerm modes [ '755', '644' ]
+125 silly gunzTarPerm modes [ '755', '644' ]
+126 silly gunzTarPerm extractEntry .npmignore
+127 silly gunzTarPerm extractEntry
+128 silly gunzTarPerm extractEntry lib/
+129 silly gunzTarPerm extractEntry lib/jwt.js
+130 silly gunzTarPerm extractEntry .gitignore
+131 silly gunzTarPerm extractEntry base64.cc
+132 silly gunzTarPerm extractEntry install.sh
+133 silly gunzTarPerm extractEntry js_base64_for_comparsion.js
+134 silly gunzTarPerm extractEntry makefile
+135 silly gunzTarPerm extractEntry package.json
+136 silly gunzTarPerm extractEntry README.md
+137 silly gunzTarPerm extractEntry package.json
+138 silly gunzTarPerm extractEntry README.md
+139 silly gunzTarPerm extractEntry test.js
+140 silly gunzTarPerm extractEntry test.php
+141 silly gunzTarPerm extractEntry wscript
+142 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/.staging/jwt-f27dbf7a/node_modules is being purged
+143 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/.staging/jwt-f27dbf7a/node_modules
+144 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/.staging/node-base64-ebee5118/node_modules is being purged
+145 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/.staging/node-base64-ebee5118/node_modules
+146 silly doParallel preinstall 2
+147 silly preinstall node-base64@0.0.1
+148 info lifecycle node-base64@0.0.1~preinstall: node-base64@0.0.1
+149 silly preinstall jwt@0.2.0
+150 info lifecycle jwt@0.2.0~preinstall: jwt@0.2.0
+151 silly lifecycle node-base64@0.0.1~preinstall: no script for preinstall, continuing
+152 silly lifecycle jwt@0.2.0~preinstall: no script for preinstall, continuing
+153 silly doReverseSerial remove 0
+154 silly doSerial move 0
+155 silly doSerial finalize 2
+156 silly finalize /home/armando/dev/bwrap/backend/node_modules/node-base64
+157 silly finalize /home/armando/dev/bwrap/backend/node_modules/jwt
+158 silly doSerial build 2
+159 silly build node-base64@0.0.1
+160 info linkStuff node-base64@0.0.1
+161 silly linkStuff node-base64@0.0.1 has /home/armando/dev/bwrap/backend/node_modules as its parent node_modules
+162 verbose linkBins node-base64@0.0.1
+163 verbose linkMans node-base64@0.0.1
+164 silly build jwt@0.2.0
+165 info linkStuff jwt@0.2.0
+166 silly linkStuff jwt@0.2.0 has /home/armando/dev/bwrap/backend/node_modules as its parent node_modules
+167 verbose linkBins jwt@0.2.0
+168 verbose linkMans jwt@0.2.0
+169 silly doSerial global-link 0
+170 silly doParallel update-linked 0
+171 silly doSerial install 2
+172 silly install node-base64@0.0.1
+173 info lifecycle node-base64@0.0.1~install: node-base64@0.0.1
+174 verbose lifecycle node-base64@0.0.1~install: unsafe-perm in lifecycle true
+175 verbose lifecycle node-base64@0.0.1~install: PATH: /home/armando/.nvm/versions/node/v7.7.4/lib/node_modules/npm/bin/node-gyp-bin:/home/armando/dev/bwrap/backend/node_modules/node-base64/node_modules/.bin:/home/armando/dev/bwrap/backend/node_modules/.bin:/home/armando/.nvm/versions/node/v7.7.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+176 verbose lifecycle node-base64@0.0.1~install: CWD: /home/armando/dev/bwrap/backend/node_modules/node-base64
+177 silly lifecycle node-base64@0.0.1~install: Args: [ '-c', './install.sh' ]
+178 info lifecycle node-base64@0.0.1~install: Failed to exec install script
+179 verbose unlock done using /home/armando/.npm/_locks/staging-0872ed9ae1529a34.lock for /home/armando/dev/bwrap/backend/node_modules/.staging
+180 silly rollbackFailedOptional Starting
+181 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/node-base64 is being purged from base /home/armando/dev/bwrap/backend
+182 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/node-base64
+183 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/node-base64 is being purged from base /home/armando/dev/bwrap/backend
+184 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/node-base64
+185 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/node-base64 is being purged from base /home/armando/dev/bwrap/backend
+186 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/node-base64
+187 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/node-base64 is being purged from base /home/armando/dev/bwrap/backend
+188 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/node-base64
+189 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/node-base64 is being purged from base /home/armando/dev/bwrap/backend
+190 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/node-base64
+191 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/node-base64 is being purged from base /home/armando/dev/bwrap/backend
+192 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/node-base64
+193 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/node-base64 is being purged from base /home/armando/dev/bwrap/backend
+194 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/node-base64
+195 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/node-base64 is being purged from base /home/armando/dev/bwrap/backend
+196 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/node-base64
+197 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/jwt is being purged from base /home/armando/dev/bwrap/backend
+198 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/jwt
+199 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/jwt is being purged from base /home/armando/dev/bwrap/backend
+200 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/jwt
+201 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/jwt is being purged from base /home/armando/dev/bwrap/backend
+202 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/jwt
+203 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/jwt is being purged from base /home/armando/dev/bwrap/backend
+204 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/jwt
+205 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/jwt is being purged from base /home/armando/dev/bwrap/backend
+206 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/jwt
+207 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/jwt is being purged from base /home/armando/dev/bwrap/backend
+208 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/jwt
+209 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/jwt is being purged from base /home/armando/dev/bwrap/backend
+210 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/jwt
+211 silly gentlyRm /home/armando/dev/bwrap/backend/node_modules/jwt is being purged from base /home/armando/dev/bwrap/backend
+212 verbose gentlyRm don't care about contents; nuking /home/armando/dev/bwrap/backend/node_modules/jwt
+213 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/node-base64
+214 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/node-base64
+215 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/node-base64
+216 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/node-base64
+217 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/node-base64
+218 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/node-base64
+219 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/node-base64
+220 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/node-base64
+221 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/jwt
+222 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/jwt
+223 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/jwt
+224 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/jwt
+225 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/jwt
+226 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/jwt
+227 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/jwt
+228 silly vacuum-fs purging /home/armando/dev/bwrap/backend/node_modules/jwt
+229 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+230 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+231 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+232 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+233 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+234 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+235 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+236 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+237 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+238 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+239 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+240 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+241 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+242 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+243 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+244 silly vacuum-fs quitting because other entries in /home/armando/dev/bwrap/backend/node_modules
+245 silly rollbackFailedOptional Finishing
+246 silly runTopLevelLifecycles Finishing
+247 silly install printInstalled
+248 warn backend@1.0.0 No description
+249 verbose If you need help, you may report this error at:
+249 verbose     <https://github.com/npm/npm/issues>
+250 verbose stack Error: node-base64@0.0.1 install: `./install.sh`
+250 verbose stack spawn ENOENT
+250 verbose stack     at ChildProcess.<anonymous> (/home/armando/.nvm/versions/node/v7.7.4/lib/node_modules/npm/lib/utils/spawn.js:33:16)
+250 verbose stack     at emitTwo (events.js:106:13)
+250 verbose stack     at ChildProcess.emit (events.js:194:7)
+250 verbose stack     at maybeClose (internal/child_process.js:899:16)
+250 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+251 verbose pkgid node-base64@0.0.1
+252 verbose cwd /home/armando/dev/bwrap/backend
+253 error Linux 4.4.0-21-generic
+254 error argv "/home/armando/.nvm/versions/node/v7.7.4/bin/node" "/home/armando/.nvm/versions/node/v7.7.4/bin/npm" "install" "--save" "jwt"
+255 error node v7.7.4
+256 error npm  v4.1.2
+257 error file sh
+258 error code ELIFECYCLE
+259 error errno ENOENT
+260 error syscall spawn
+261 error node-base64@0.0.1 install: `./install.sh`
+261 error spawn ENOENT
+262 error Failed at the node-base64@0.0.1 install script './install.sh'.
+262 error Make sure you have the latest version of node.js and npm installed.
+262 error If you do, this is most likely a problem with the node-base64 package,
+262 error not with npm itself.
+262 error Tell the author that this fails on your system:
+262 error     ./install.sh
+262 error You can get information on how to open an issue for this project with:
+262 error     npm bugs node-base64
+262 error Or if that isn't available, you can get their info via:
+262 error     npm owner ls node-base64
+262 error There is likely additional logging output above.
+263 verbose exit [ 1, true ]
