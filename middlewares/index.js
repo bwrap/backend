@@ -1,5 +1,6 @@
 
 const passport = require('passport');
+const moment = require('moment');
 const jwt = require('jwt-simple');
 require('../config/passport')(passport);
 

@@ -27,7 +27,9 @@ module.exports = function routes (express, Entity) {
     .forEach(function (index) {
       var rt = defaultRoutes[index];
 
-      if (typeof Entity[index] !== 'function') return;
+      var isPrivate = index[0] === '_';
+      var isNotFunction = typeof Entity[index] !== 'function';
+      if (isNotFunction || isPrivate) return;
 
       if (rt) {
         router[rt.method](

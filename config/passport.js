@@ -10,6 +10,7 @@ module.exports = async function (passport) {
 
   passport.use(new JwtStrategy(opts, function (jwt_payload, done) { // eslint-disable-line
     User.find({ id: jwt_payload.id }, function (err, user) {
+      console.log('USER:', user);
       if (err) return done(err, false);
       return done(null, user);
     });
